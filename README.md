@@ -17,3 +17,6 @@ def find_cargo_location():
             break
         else:
             print("Error! The total weight of the boxes is not 713 kg. Please re-enter.")
+if __name__ == "__main__":
+    print("Welcome to the Mars Cargo Recovery Program!")
+    find cargo()
