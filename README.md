@@ -6,7 +6,12 @@ def find_cargo_location():
     while True:
         print("enter kilometer mark:")
         for i in range(3):
-            cargo_locations[i] = int(input(f"box {i + 1}: "))
+            try:
+                cargo_locations[i] = int(input(f"box {i + 1}: "))
+            except ValueError:
+                print("Error! enter a valid integer.")
+                return
+            
         for i in range(3):
             cargo_locations[i] += i + 1
 
