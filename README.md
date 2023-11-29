@@ -11,9 +11,7 @@ def find_cargo_location():
             except ValueError:
                 print("Error! enter a valid integer.")
                 return
-            
-        for i in range(3):
-            cargo_locations[i] += i + 1
+                cargo_locations[i] += i + 1
 
         print("Boxes have been moved. Checking the result...")
 
@@ -22,6 +20,9 @@ def find_cargo_location():
             break
         else:
             print("Error! The total weight of the boxes is not 713 kg. Please re-enter.")
+
 if __name__ == "__main__":
     print("Welcome to the Mars Cargo Recovery Program!")
-    find cargo()
+    find_cargo_location()
+
+            
